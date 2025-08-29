@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-set -e
+# Map HA add-on options to environment variables expected by the app
+export USERNAME="${username}"
+export PASSWORD="${password}"
 
-# Map HA addon options to expected environment variables
-export USERNAME="${USERNAME:-$username}"
-export PASSWORD="${PASSWORD:-$password}"
-
-/app/run.sh
+# Run the actual app (the image entrypoint is `python app.py`, so we replicate it)
+python /app/app.py --port 80
