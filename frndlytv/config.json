@@ -1,6 +1,6 @@
 {
   "name": "FrndlyTV for Channels",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "frndlytv",
   "description": "FrndlyTV M3U/EPG generator for IPTV",
   "arch": ["amd64", "aarch64"],
@@ -10,12 +10,12 @@
     "8183/tcp": 8183
   },
   "options": {
-    "username": "MY_EMAIL",
-    "password": "MY_PASSWORD"
+    "username": "",
+    "password": ""
   },
   "schema": {
     "username": "str",
-    "password": "str"
+    "password": "password"
   },
   "image": "matthuisman/frndlytv-for-channels"
 }
